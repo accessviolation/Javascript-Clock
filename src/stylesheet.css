@@ -10,27 +10,32 @@ body{
   color: #bbb;
 }
 
-#carousel {
-  margin-top: 30px;
-  width: 100%;
-  height: 100%;
+.dial {
   position: absolute;
   transform-style: preserve-3d;
-  left: 100px;
+}
+
+#rightMinute{
+	left: 210px;
+	top: 150px;
+}
+
+#leftMinute{
+  left:50px;
   top: 150px;
 }
 
-#carousel div {
+.dial div {
   display: block;
   position: absolute;
-  width: 186px;
-  height: 116px;
+  width: 146px;
+  height: 96px;
   backface-visibility: hidden;
   text-align: center;
   font-family: 'Iceland', cursive;
   color: rgba(68, 176, 255, 1);
-  font-size: 90px;
-  line-height: 1.3;
+  font-size: 85px;
+  line-height: 1.1;
   background-color: rgba(30, 30, 30, .6);
   border-radius: 20px;
   /*box-shadow: inset 1px 2px 0px rgba(10,10,10,.6),
@@ -47,14 +52,21 @@ body{
 
 
 
-#carousel div:nth-child(1) { transform: rotateX(   0deg ) translateZ( 200px );  }
-#carousel div:nth-child(2) { transform: rotateX(  36deg ) translateZ( 200px ); }
-#carousel div:nth-child(3) { transform: rotateX( 72deg ) translateZ( 200px ); }
-#carousel div:nth-child(4) { transform: rotateX( 108deg ) translateZ( 200px ); }
-#carousel div:nth-child(5) { transform: rotateX( 144deg ) translateZ( 200px ); }
-#carousel div:nth-child(6) { transform: rotateX( 180deg ) translateZ( 200px ); }
-#carousel div:nth-child(7) { transform: rotateX( 216deg ) translateZ( 200px ); }
-#carousel div:nth-child(8) { transform: rotateX( 252deg ) translateZ( 200px ); }
-#carousel div:nth-child(9) { transform: rotateX( 288deg ) translateZ( 200px ); }
-#carousel div:nth-child(10) { transform: rotateX( 324deg ) translateZ( 200px ); }
+#rightMinute div:nth-child(1) { transform: rotateX(   0deg ) translateZ( 200px ); }
+#rightMinute div:nth-child(2) { transform: rotateX(  36deg ) translateZ( 200px ); }
+#rightMinute div:nth-child(3) { transform: rotateX( 72deg ) translateZ( 200px ); }
+#rightMinute div:nth-child(4) { transform: rotateX( 108deg ) translateZ( 200px ); }
+#rightMinute div:nth-child(5) { transform: rotateX( 144deg ) translateZ( 200px ); }
+#rightMinute div:nth-child(6) { transform: rotateX( 180deg ) translateZ( 200px ); }
+#rightMinute div:nth-child(7) { transform: rotateX( 216deg ) translateZ( 200px ); }
+#rightMinute div:nth-child(8) { transform: rotateX( 252deg ) translateZ( 200px ); }
+#rightMinute div:nth-child(9) { transform: rotateX( 288deg ) translateZ( 200px ); }
+#rightMinute div:nth-child(10) { transform: rotateX( 324deg ) translateZ( 200px ); }
+
+#leftMinute div:nth-child(1) { transform: rotateX(   0deg ) translateZ( 200px ); }
+#leftMinute div:nth-child(2) { transform: rotateX(  60deg ) translateZ( 200px ); }
+#leftMinute div:nth-child(3) { transform: rotateX( 120deg ) translateZ( 200px ); }
+#leftMinute div:nth-child(4) { transform: rotateX( 180deg ) translateZ( 200px ); }
+#leftMinute div:nth-child(5) { transform: rotateX( 240deg ) translateZ( 200px ); }
+#leftMinute div:nth-child(6) { transform: rotateX( 300deg ) translateZ( 200px ); }
 
