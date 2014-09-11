@@ -6,28 +6,87 @@
         <script type="text/javascript" src="lib/jquery-ui-1.10.4.custom.min.js"></script>
     </head>
     <body>
-        <section class="container">
-		  <div id="leftMinute" class="dial">
-			<div class="panel0">0</div>
-			<div class="panel1">1</div>
-			<div class="panel2">2</div>
-			<div class="panel3">3</div>
-			<div class="panel4">4</div>
-			<div class="panel5">5</div>
-		  </div>
-		  <div id="rightMinute" class="dial">
-			<div class="panel0">0</div>
-			<div class="panel1">1</div>
-			<div class="panel2">2</div>
-			<div class="panel3">3</div>
-			<div class="panel4">4</div>
-			<div class="panel5">5</div>
-			<div class="panel6">6</div>
-			<div class="panel7">7</div>
-			<div class="panel8">8</div>
-			<div class="panel9">9</div>
-		  </div>
-		</section>
+        <span id="seconds"> </span>
+	<div id="blinder">
+        <div class="container">
+            
+            <div id="leftHour" class="dial">
+                <div class="panel0">0</div>
+                <div class="panel1">1</div>
+                <div class="panel2">0</div>
+                <div class="panel3">1</div>
+                <div class="panel4">0</div>
+                <div class="panel5">1</div>
+              </div>
+            
+              <p id="hourminute" class="colon"> : </p>
+            
+              <div id="rightHour" class="dial">
+                <div class="panel0">0</div>
+                <div class="panel1">1</div>
+                <div class="panel2">2</div>
+                <div class="panel3">3</div>
+                <div class="panel4">4</div>
+                <div class="panel5">5</div>
+                <div class="panel6">6</div>
+                <div class="panel7">7</div>
+                <div class="panel8">8</div>
+                <div class="panel9">9</div>
+              </div>
+            
+            <div id="leftMinute" class="dial">
+                <div class="panel0">0</div>
+                <div class="panel1">1</div>
+                <div class="panel2">2</div>
+                <div class="panel3">3</div>
+                <div class="panel4">4</div>
+                <div class="panel5">5</div>
+              </div>
+
+              <div id="rightMinute" class="dial">
+                <div class="panel0">0</div>
+                <div class="panel1">1</div>
+                <div class="panel2">2</div>
+                <div class="panel3">3</div>
+                <div class="panel4">4</div>
+                <div class="panel5">5</div>
+                <div class="panel6">6</div>
+                <div class="panel7">7</div>
+                <div class="panel8">8</div>
+                <div class="panel9">9</div>
+              </div>
+            
+              <p id="minutesecond" class="colon"> : </p>
+
+              <div id="leftSecond" class="dial">
+                <div class="panel0">0</div>
+                <div class="panel1">1</div>
+                <div class="panel2">2</div>
+                <div class="panel3">3</div>
+                <div class="panel4">4</div>
+                <div class="panel5">5</div>
+              </div>
+
+              <div id="rightSecond" class="dial">
+                <div class="panel0">0</div>
+                <div class="panel1">1</div>
+                <div class="panel2">2</div>
+                <div class="panel3">3</div>
+                <div class="panel4">4</div>
+                <div class="panel5">5</div>
+                <div class="panel6">6</div>
+                <div class="panel7">7</div>
+                <div class="panel8">8</div>
+                <div class="panel9">9</div>
+              </div>
+              <div id="meridian">
+                <span id="AM">AM</span>
+                <span id="PM">PM</span>
+              </div>
+		  
+		</div>
+		</div>
+        <span id="currentSeconds"> </span>
         <script type="text/javascript" src="main.js"></script>
     </body>
 </html>

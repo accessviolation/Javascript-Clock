@@ -4,10 +4,19 @@ body{
 
 .container {
   width: 400px;
-  height: 400px;
-  position: relative;
-  perspective: 1000px;
+  height: 400px;  
+  perspective: 5000px;
+  perspective-origin: center center;
   color: #bbb;
+  position: relative;
+  top: -130px;
+  transform-style: preserve-3d;
+}
+
+#blinder{
+  height:130px;
+  width:1000px;
+  overflow: hidden;
 }
 
 .dial {
@@ -15,27 +24,87 @@ body{
   transform-style: preserve-3d;
 }
 
-#rightMinute{
-	left: 210px;
+#rightSecond{
+	left: 780px;
 	top: 150px;
 }
 
-#leftMinute{
-  left:50px;
+#leftSecond{
+  left:650px;
   top: 150px;
 }
 
-.dial div {
-  display: block;
+#leftMinute{
+  left: 350px;
+  top:150px;
+}
+
+#rightMinute{
+  left: 480px;
+  top: 150px;
+}
+
+#rightHour{
+  left: 180px;
+  top: 150px;
+}
+
+#leftHour{
+  top: 150px;
+  left: 50px;
+}
+
+#seconds{
+    color: white;
+}
+
+.colon{
+  color: #333;
+  font-size: 6em;
   position: absolute;
-  width: 146px;
-  height: 96px;
+  text-shadow: 0px 0px 3px rgba(255,255,255,1),
+               0px 0px 5px rgba(255,255,255,1),
+               0px 0px 5px rgba(149,31,255,1);
+}
+
+#hourminute{
+  top: 25px;
+  left: 317px;
+}
+
+#minutesecond{
+  top: 25px;
+  left: 630px;
+}
+
+#meridian{
+  font-family: 'Iceland', cursive;
+  font-size: 2em;
+  position: absolute;
+  top: 157px;
+  left: 950px;
+}
+
+.lit{
+  color: #ddd;
+  text-shadow: 1px 1px 2px rgba(149,31,255,1);
+}
+
+.unlit{
+  color: #777;
+  text-shadow: 1px 1px 2px rgba(0,0,0,1);
+}
+
+.dial div {
+  position: absolute;
+  width: 120px;
+  height:80px;
   backface-visibility: hidden;
   text-align: center;
   font-family: 'Iceland', cursive;
   color: rgba(68, 176, 255, 1);
-  font-size: 85px;
-  line-height: 1.1;
+  font-size: 80px;
+  line-height: .95;
   background-color: rgba(30, 30, 30, .6);
   border-radius: 20px;
   /*box-shadow: inset 1px 2px 0px rgba(10,10,10,.6),
@@ -50,23 +119,4 @@ body{
                -1px -1px 0 rgba(149, 41, 257, .8);
 }
 
-
-
-#rightMinute div:nth-child(1) { transform: rotateX(   0deg ) translateZ( 200px ); }
-#rightMinute div:nth-child(2) { transform: rotateX(  36deg ) translateZ( 200px ); }
-#rightMinute div:nth-child(3) { transform: rotateX( 72deg ) translateZ( 200px ); }
-#rightMinute div:nth-child(4) { transform: rotateX( 108deg ) translateZ( 200px ); }
-#rightMinute div:nth-child(5) { transform: rotateX( 144deg ) translateZ( 200px ); }
-#rightMinute div:nth-child(6) { transform: rotateX( 180deg ) translateZ( 200px ); }
-#rightMinute div:nth-child(7) { transform: rotateX( 216deg ) translateZ( 200px ); }
-#rightMinute div:nth-child(8) { transform: rotateX( 252deg ) translateZ( 200px ); }
-#rightMinute div:nth-child(9) { transform: rotateX( 288deg ) translateZ( 200px ); }
-#rightMinute div:nth-child(10) { transform: rotateX( 324deg ) translateZ( 200px ); }
-
-#leftMinute div:nth-child(1) { transform: rotateX(   0deg ) translateZ( 200px ); }
-#leftMinute div:nth-child(2) { transform: rotateX(  60deg ) translateZ( 200px ); }
-#leftMinute div:nth-child(3) { transform: rotateX( 120deg ) translateZ( 200px ); }
-#leftMinute div:nth-child(4) { transform: rotateX( 180deg ) translateZ( 200px ); }
-#leftMinute div:nth-child(5) { transform: rotateX( 240deg ) translateZ( 200px ); }
-#leftMinute div:nth-child(6) { transform: rotateX( 300deg ) translateZ( 200px ); }
 
