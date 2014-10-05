@@ -24,7 +24,6 @@ $(document).ready(function(){
             hours2 = 0;
         }
         
-        $('#seconds').text('hours: ' + today.getHours() + ' minutes: ' + today.getMinutes() + '  seconds: ' + today.getSeconds());
 		rightSecondsArray = setInitialPosition('rightSecond', 10, seconds2, 'seconds2Array');
 		leftSecondsArray = setInitialPosition('leftSecond', 6, seconds1, 'seconds1Array');
         rightMinutesArray = setInitialPosition('rightMinute', 10, minutes2, 'minutes2Array');
@@ -91,8 +90,6 @@ $(document).ready(function(){
     
     
     function tenSidedRotation(elementToMove, arrayName){
-        var today = new Date();
-		$('#seconds').text('hours: ' + today.getHours() + ' minutes: ' + today.getMinutes() + '  seconds: ' + today.getSeconds());
         for(var i = 0; i < panels10.length; i++){	
             arrayName[i] -= 36;
 	       $('#' + elementToMove + ' .' + panels10[i]).css({ transform: 'rotateX(' + arrayName[i] + 'deg ) translateZ( 200px )',
