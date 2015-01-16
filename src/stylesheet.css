@@ -2,15 +2,26 @@ body{
   background-color: #333;
 }
 
+#no-css3{
+    display: none;
+    color: #bbb;
+}
+
 .container {
   width: 400px;
   height: 400px;  
   perspective: 5000px;
+  -moz-perspective: 5000px;
+  -webkit-perspective: 5000px;
   perspective-origin: center center;
+  -moz-perspective-origin: center center;
+  -webkit-perspective-origin: center center;
   color: #bbb;
   position: relative;
   top: -130px;
   transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
 }
 
 #blinder{
@@ -22,6 +33,8 @@ body{
 .dial {
   position: absolute;
   transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
 }
 
 #rightSecond{
@@ -100,6 +113,8 @@ body{
   width: 120px;
   height:80px;
   backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
   text-align: center;
   font-family: 'Iceland', cursive;
   color: rgba(68, 176, 255, 1);
@@ -107,6 +122,8 @@ body{
   line-height: .95;
   background-color: rgba(30, 30, 30, .6);
   border-radius: 20px;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
   /*box-shadow: inset 1px 2px 0px rgba(10,10,10,.6),
               inset -1px -2px 0 rgba(40,40,40,.5),
               inset 7px 7px 9px 8px rgba(90, 50, 80, .3),
@@ -114,9 +131,24 @@ body{
   box-shadow:inset 0px 1px 2px 0px rgba(149, 31, 207, .3),
              inset 15px 15px 5px 2px rgba(0,0,0,.3),
              inset -10px -10px 4px 4px rgba(0,0,0,.5);
+  -moz-box-shadow:inset 0px 1px 2px 0px rgba(149, 31, 207, .3),
+             inset 15px 15px 5px 2px rgba(0,0,0,.3),
+             inset -10px -10px 4px 4px rgba(0,0,0,.5);
+  -webkit-box-shadow:inset 0px 1px 2px 0px rgba(149, 31, 207, .3),
+             inset 15px 15px 5px 2px rgba(0,0,0,.3),
+             inset -10px -10px 4px 4px rgba(0,0,0,.5);
   border:1px solid rgba(149, 41, 257, 1);
   text-shadow: 1px 1px 0 rgba(240,240,240,.8),
                -1px -1px 0 rgba(149, 41, 257, .8);
+}
+
+.no-csstransforms3d .container{
+    display: none;
+}
+
+.no-csstransforms3d #no-css3{
+    display:block;
+    
 }
 
 
